@@ -25,7 +25,7 @@
   <nav class="navbar-default navbar-side" role="navigation">
     <div class="sidebar-collapse">
       <ul class="nav" id="main-menu">
-        <li class="text-center"> <img src="assets/img/find_user.png" class="user-image img-responsive"/> </li>      
+        <li class="text-center"> &nbsp; </li>      
         <li  > <a class="active-menu"  href="index.html"><i class="fa fa-square-o fa-3x"></i> Blank Page</a> </li>
       </ul>
     </div>
@@ -126,7 +126,9 @@
 	  <div class="row">
 	  	<div class="col-md-12"><div id="interactive" class="viewport"></div></div>
 	  </div>
-	  
+	  <div class="row">
+	  	<div class="col-md-12"><input type="button" id="btnTest" name="btnTest" value="Test"/></div>
+	  </div>
     </div>
     <!-- /. PAGE INNER  -->
   </div>
@@ -147,6 +149,12 @@
     <script src="//webrtc.github.io/adapter/adapter-latest.js" type="text/javascript"></script>
     <script src="dist/quagga.js" type="text/javascript"></script>
     <script src="live_w_locator.js" type="text/javascript"></script>
-	
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#btnTest").click(function(){
+		alert("Test Event");
+	});
+});
+</script>
 </body>
 </html>
